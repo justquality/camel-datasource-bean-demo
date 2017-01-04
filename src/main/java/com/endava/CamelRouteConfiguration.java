@@ -33,7 +33,7 @@ public class CamelRouteConfiguration extends CamelConfiguration {
     @Bean
     public DataSource dataSource() {
         MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setURL("jdbc:mysql://localhost:3306/testdb");
+        dataSource.setURL("jdbc:mysql://localhost:3306/testdb?serverTimezone=Europe/Chisinau");
         dataSource.setUser("root");
         dataSource.setPassword("1111");
         return dataSource;
