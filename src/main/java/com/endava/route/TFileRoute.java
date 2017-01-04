@@ -21,7 +21,7 @@ public class TFileRoute extends RouteBuilder {
                 .log("Saving file.....")
                 .bean(tFileService, "save")
                 .log("File saved.")
-                .to("file:src/data/processed");
+                .to("file:target/received-data");
     }
 
 }
