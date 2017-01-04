@@ -3,7 +3,7 @@ package com.endava.model;
 import javax.persistence.*;
 
 /**
- * Created by Dmitri Cadea on 03.01.17.
+ * Created by Dumitru Cadea on 03.01.17.
  */
 @Entity
 @Table(name = "T_FILE")
@@ -46,5 +46,14 @@ public class TFile {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return "TFile{" +
+                "id=" + id +
+                ", filename='" + filename + '\'' +
+                ", content='" + content + '\'' +
+                '}';
     }
 }
